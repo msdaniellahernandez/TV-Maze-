@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TV Maze</title>
+  <link href="https://bootswatch.com/5/superhero/bootstrap.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+
+  <main class="container">
+    <h1 class="mt-3">TV Maze</h1>
+
+    <!-- Search Form -->
+    <form id="searchForm" class="mt-3 mb-5">
+      <div class="mb-3 row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+          <div class="input-group">
+            <input
+              id="searchForm-term"
+              type="search"
+              required
+              value="bletchley"
+              class="form-control"
+              aria-label="Search">
+            <button type="submit" class="input-group-text btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- TV Shows Container -->
+    <section id="showsList" class="row">
+      <!-- Show cards will be inserted here by tvmaze.js -->
+    </section>
+
+    <!-- Episodes Area (initially hidden) -->
+    <section id="episodesArea" style="display: none">
+      <h3>Episodes</h3>
+      <ul id="episodesList">
+        <!-- Episode items will be inserted here by tvmaze.js -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- Includes jQuery and Axios -->
+  <script src="http://unpkg.com/jquery"></script>
+  <script src="http://unpkg.com/axios/dist/axios.js"></script>
+  
+  <!-- Link toTV Maze application script -->
+  <script src="tvmaze.js"></script>
+  
+
+<!--
+<link rel="stylesheet"
+      href="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.css" />
+<script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+<script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+<script src="https://unpkg.com/jasmine-core/lib/jasmine-core/boot0.js"></script>
+<script src="https://unpkg.com/jasmine-core/lib/jasmine-core/boot1.js"></script>
+<script src="https://unpkg.com/axios-mock-adapter/dist/axios-mock-adapter.js"></script>
+-->
+
+
+  
+</body>
+</html> 
